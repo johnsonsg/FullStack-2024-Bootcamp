@@ -1,17 +1,15 @@
 {
-  "name": "2.4-qr-code-generator",
+  "name": "create-qr-code",
   "version": "1.0.0",
-  "description": "",
+  "description": "I'm learning about npm",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Shawn J",
+  "author": "Shawn Johnson",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^9.2.15",
-    "qr-image": "^3.2.0",
     "sillyname": "^0.1.0",
     "superheroes": "^3.0.0"
   }
