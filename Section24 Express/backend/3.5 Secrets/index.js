@@ -16,6 +16,7 @@ const port = 3000;
 
 var userIsAuthenticated = false;
 // Ref above:
+// app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.urlencoded({ extended: true })); // when you want to get information from HTML Form.
 
 function checkPassword(req, res, next) {
@@ -38,7 +39,9 @@ app.post("/check", (req, res) => {
   if (userIsAuthenticated) {
     res.sendFile(__dirname + "/public/secret.html");
   } else {
-    res.sendFile(__dirname + "/public/index.html");
+    // res.sendFile(__dirname + "/public/index.html");
+    // can also use res.redirect("/") to redirect to the root route
+    res.redirect("/");
   }
 });
 
